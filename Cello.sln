@@ -3,9 +3,58 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{79876094-D7A5-482D-B5AD-991CCE85B472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C2297502-CE9E-4C1E-A477-2893113C3D52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{274CD1DD-4403-4DDD-9DAA-68CFCF31A256}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cello.Application", "Core\Cello.Application\Cello.Application.csproj", "{365683D3-F782-4122-93A2-1DD083608985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cello.Domain", "Core\Cello.Domain\Cello.Domain.csproj", "{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cello.Infrastructure.Common", "Infrastructure\Cello.Infrastructure.Common\Cello.Infrastructure.Common.csproj", "{01C266E0-F275-44E2-8B7A-A4D54EC0582E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cello.Infrastructure.MySql", "Infrastructure\Cello.Infrastructure.MySql\Cello.Infrastructure.MySql.csproj", "{A4E714BC-282B-441D-93AA-E3D77BA0C5AB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cello.Web", "Presentation\Cello.Web\Cello.Web.csproj", "{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{365683D3-F782-4122-93A2-1DD083608985}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{365683D3-F782-4122-93A2-1DD083608985}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{365683D3-F782-4122-93A2-1DD083608985}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{365683D3-F782-4122-93A2-1DD083608985}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01C266E0-F275-44E2-8B7A-A4D54EC0582E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01C266E0-F275-44E2-8B7A-A4D54EC0582E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01C266E0-F275-44E2-8B7A-A4D54EC0582E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01C266E0-F275-44E2-8B7A-A4D54EC0582E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4E714BC-282B-441D-93AA-E3D77BA0C5AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4E714BC-282B-441D-93AA-E3D77BA0C5AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4E714BC-282B-441D-93AA-E3D77BA0C5AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4E714BC-282B-441D-93AA-E3D77BA0C5AB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{365683D3-F782-4122-93A2-1DD083608985} = {79876094-D7A5-482D-B5AD-991CCE85B472}
+		{5E5DE68E-CBCF-4868-B409-3E6D3F76C94C} = {79876094-D7A5-482D-B5AD-991CCE85B472}
+		{01C266E0-F275-44E2-8B7A-A4D54EC0582E} = {C2297502-CE9E-4C1E-A477-2893113C3D52}
+		{A4E714BC-282B-441D-93AA-E3D77BA0C5AB} = {C2297502-CE9E-4C1E-A477-2893113C3D52}
+		{4BC0F7AE-444E-4EDE-B29E-DDC35C83C22C} = {274CD1DD-4403-4DDD-9DAA-68CFCF31A256}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3BA079DD-79D3-4355-9291-0153DC5582E3}
